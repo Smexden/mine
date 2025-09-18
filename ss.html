@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Form</title>
+</head>
+<body bgcolor="#a9a9a9">
+<h2>User Registration</h2>
+<form action="/submit" method="POST">
+  <table>
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" placeholder="Enter username" name="username" required></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" placeholder="Enter password" name="password" required></td>
+    </tr>
+    <tr>
+      <td>Confirm Password:</td>
+      <td><input type="password" placeholder="Re-enter password" name="confirm_password" required></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" placeholder="your@example.com" name="email" required></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" value="Male" name="gender" required> Male
+        <input type="radio" value="Female" name="gender"> Female
+        <input type="radio" value="Prefer not to say" name="gender"> Prefer not to say
+      </td>
+    </tr>
+    <tr>
+      <td>Phone:</td>
+      <td>
+        <select name="country_code" required>
+          <option value="+254">+254</option>
+          <option value="+255">+255</option>
+          <option value="+256">+256</option>
+          <option value="+250">+250</option>
+        </select>
+        <input type="tel" placeholder="Phone number" name="phone" pattern="[0-9]{9}" required>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Register"></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
